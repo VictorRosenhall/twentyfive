@@ -1,0 +1,88 @@
+/* Hem-hemsida*/
+#wrapper {
+    display:grid;
+    height: 100vh;
+    grid-template-columns:  25% 25% 25% 25%;
+    grid-template-rows: 10% auto auto auto 20vh;
+    grid-template-areas:
+    'hd hd hd hd'
+    'sc1 sc1 sc1 sc1'
+    'sc2 sc2 sc2 sc2'
+    'sc3 sc3 sc3 sc3'
+    'sc4 sc4 sc4 sc4'
+    'ft ft ft ft';
+    margin: 0px;
+    padding: 0px;
+    }
+
+header {
+    grid-area: hd;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+}
+section1 {
+    grid-area: sc1;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+section2 {
+    grid-area: sc2;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    height: auto;
+    width: 100%;
+}
+section3 {
+    grid-area: sc3;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    height: auto;
+    width: 100%;
+}
+section4 {
+    grid-area: sc4;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: brown;
+    height: auto;
+    width: 100%;
+}
+footer{
+    grid-area: ft;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    height: auto;
+    width: 100%;
+}
+
+section1 div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section1 div div{
+    height: 10vh;
+    width: 25vw;
+    background-color: grey;
+    margin-inline: 5vw;
+    border-radius: 20px;
+}
+section1 div div text{
+    text-decoration: none;
+    background-color: black;
+    justify-content: start;
+
+}
