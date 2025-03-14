@@ -1,28 +1,42 @@
 /* Hem-hemsida*/
 #wrapper {
     display:grid;
-    height: 100vh;
+    height: auto;
     grid-template-columns:  25% 25% 25% 25%;
-    grid-template-rows: 10% auto auto auto 20vh;
+    grid-template-rows: 7% auto auto auto 20vh;
     grid-template-areas:
-    'hd hd hd hd'
+    'nv nv nv nv'
     'sc1 sc1 sc1 sc1'
     'sc2 sc2 sc2 sc2'
     'sc3 sc3 sc3 sc3'
     'sc4 sc4 sc4 sc4'
     'ft ft ft ft';
-    margin: 0px;
-    padding: 0px;
     }
 
-header {
-    grid-area: hd;
+nav {
+    grid-area: nv;
     display: flex;
-    flex-wrap: wrap;
-    background-color: brown;
-    height: 100%;
-    width: 100%;
+    /*flex-wrap: wrap;*/
+    background-color:white;
+    top: 0px;
+    position: sticky;
+    justify-content: center;
+    align-items: center;´
+    z-index: 2;
+
+
 }
+.logga{
+    width: auto;
+    height: auto;
+    position: fixed;
+}
+.logga img{
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+}
+
 section1 {
     grid-area: sc1;
     display: flex;
@@ -31,11 +45,16 @@ section1 {
     height: auto;
     width: 100%;
 }
+section1 div{
+    padding-top: 0%;
+    margin: 0%;
+
+}
 section2 {
     grid-area: sc2;
     display: flex;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: white;
     height: auto;
     width: 100%;
 }
@@ -43,7 +62,7 @@ section3 {
     grid-area: sc3;
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: white;
     height: auto;
     width: 100%;
 }
@@ -51,7 +70,7 @@ section4 {
     grid-area: sc4;
     display: flex;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: white;
     height: auto;
     width: 100%;
 }
@@ -59,9 +78,22 @@ footer{
     grid-area: ft;
     display: flex;
     flex-wrap: wrap;
-    background-color: green;
+    background-color: skyblue;
     height: auto;
     width: 100%;
+}
+
+#logga-footer{
+    display: flex;
+    justify-content: center;
+}
+#logga-footer img{
+    height: 40px;
+    width: 40px;
+}
+
+#copyright{
+    justify-content: center;
 }
 
 section1 div{
@@ -80,9 +112,84 @@ section1 div div{
     margin-inline: 5vw;
     border-radius: 20px;
 }
-section1 div div text{
+section1 div div p{
     text-decoration: none;
-    background-color: black;
     justify-content: start;
+    color: black;
+
+}
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body ul div{
+    margin: 100px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none; /* Tar bort punkterna från listan */
+    padding-left: 0; /* Tar bort eventuell padding till vänster */
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+.menu div ul{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+a {
+    text-decoration: none; /* Tar bort understrykning på alla länkar */
+}
+
+.list-meny{
+    font-size: 50px;
+    color: black;
+    margin: 25px;
 
 }
