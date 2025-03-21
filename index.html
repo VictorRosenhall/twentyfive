@@ -10,7 +10,7 @@
 <body>
 
   <div id="wrapper">
-    <nav class="menu-nav">  <!-- Lägg till en klass på nav-elementet om du vill selektera det lättare -->
+    <nav class="menu-nav">  <!-- Lägg till en klass på nav-elementet för stt vill selektera det lättare -->
         <div class="fade-layer"></div> <!-- Fade layer som du togglar i din JS -->
         <div class="menu-button">
             <i class="material-icons">menu</i>  <!-- Menyknappen som kommer att trigga menyn -->
@@ -33,8 +33,8 @@
           <div>
             <h1>Text</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur numquam earum delectus illo, quaerat repudiandae et quasi aliquid ducimus ab ipsam illum, sed consequatur labore sit aut rerum sunt.</p>
-            <a href=""><div><p>text</p></div></a>
-            <a href=""><div><p>text</p></div></a>
+            <a href=""><div class="knapp"><p>text</p></div></a>
+            <a href=""><div class="knapp"><p>text</p></div></a>
           </div>
       </section1>
       <section2>
@@ -56,16 +56,35 @@
         </div>
       </section4>
       <footer>
-        <div id="logga-footer">
-          <img src="img/testbild1.webp" alt="logga">
-        </div>
-        <div>
-          <h2>Text</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur numquam earum delectus illo, quaerat repudiandae et quasi aliquid ducimus ab ipsam illum, sed consequatur labore sit aut rerum sunt.</p>
-        </div>
-        <div id="copyright">
-          <p>Mühlenbocks släktförening 2025</p>
-        </div>
+          <div class="rad">
+              <div class="kolumn">
+              <img class="logga-footer" src="img/testbild1.webp" alt="">
+              <p>100 Gatan</p>
+              <p>Avenyn, Göteborg</p>
+              </div>
+              <div class="kolumn">
+                <h3>Address</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="mail">mail.mailsson@gmail.com</p>
+                <h4>0736720812</h4>
+              </div>
+              <div class="kolumn">
+                <h3>Länkar</h3>
+                <ul>
+                  <li><a href="index.html">index</a></li>
+                  <li><a href="index2.html">index2</a></li>
+                  <li><a href="index3.html">index3</a></li>
+                  <li><a href="index4.html">index4</a></li>
+                </ul>
+              </div>
+              <div class="kolumn">
+                <h3>Nyhetsbrev</h3>
+                <form>
+                  <input type="email" placeholder="Skriv in din email" required>
+                </form>
+              </div>
+
+          </div>
       </footer>
   </div>
   <script src="js/main.js"></script>

@@ -23,9 +23,11 @@ nav {
     justify-content: center;
     align-items: center;´
     z-index: 2;
-
-
 }
+nav div p{
+    color: #ffffff;
+}
+
 .logga{
     width: auto;
     height: auto;
@@ -48,6 +50,7 @@ section1 {
 section1 div{
     padding-top: 0%;
     margin: 0%;
+    
 
 }
 section2 {
@@ -76,24 +79,69 @@ section4 {
 }
 footer{
     grid-area: ft;
+    background:linear-gradient(to right, #141E30, #243B55);
+    bottom:0;
+    width: 100%;
+    color: #fff;
+    padding: 100px 0px 30px;
+    border-radius: 20px 20px 0px 0px;
+    line-height: 20px;
+}
+.rad{
+    width: 85%;
+    margin:auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: skyblue;
-    height: auto;
-    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-
-#logga-footer{
+.kolumn{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.kolumn h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+.mail{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0px;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.logga-footer{
+    height: 50px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+form{
+    padding-bottom: 15px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ffffff;
+    border: 0;
+    outline: none;
+
 }
 #logga-footer img{
     height: 40px;
     width: 40px;
-}
-
-#copyright{
-    justify-content: center;
 }
 
 section1 div{
@@ -105,19 +153,6 @@ section1 div{
     margin-right: 10%;
 }
 
-section1 div div{
-    height: 10vh;
-    width: 25vw;
-    background-color: grey;
-    margin-inline: 5vw;
-    border-radius: 20px;
-}
-section1 div div p{
-    text-decoration: none;
-    justify-content: start;
-    color: black;
-
-}
 body {
     margin: 0px;
     padding: 0px;
@@ -136,7 +171,7 @@ ul {
 
 .menu{
     height: 100vh;
-    width: 80vw;
+    width: 60vw;
     background: white;
     position: fixed;
     top: 0;
@@ -193,3 +228,21 @@ a {
     margin: 25px;
 
 }
+
+.knapp {
+    height: 10vh;
+    width: 25vw;
+    background:linear-gradient(to right, #141E30, #243B55);
+    margin-inline: 5vw;
+    border-radius: 20px;
+}
+.knapp p{
+    text-decoration: none;
+    justify-content: start;
+    color: black;
+}
+.knapp :hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
