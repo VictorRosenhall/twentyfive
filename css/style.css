@@ -3,9 +3,10 @@
     display:grid;
     height: auto;
     grid-template-columns:  25% 25% 25% 25%;
-    grid-template-rows: 7% auto auto auto 20vh;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
     'nv nv nv nv'
+    'sw sw sw sw'
     'sc1 sc1 sc1 sc1'
     'sc2 sc2 sc2 sc2'
     'sc3 sc3 sc3 sc3'
@@ -14,15 +15,17 @@
     }
 
 nav {
+    height: 10vh;
     grid-area: nv;
     display: flex;
     /*flex-wrap: wrap;*/
-    background-color:white;
+    background-color: #fff;
     top: 0px;
     position: sticky;
     justify-content: center;
-    align-items: center;´
-    z-index: 2;
+    align-items: center;
+    /*z-index: 2;*/
+    border-bottom: 1px solid #141E30; /*linear-gradient(to right, #141E30, #243B55);*/
 }
 nav div p{
     color: #ffffff;
@@ -38,6 +41,12 @@ nav div p{
     width: 40px;
     justify-content: center;
 }
+swiper{
+    height: 60vh;
+    width: 98.72vw;
+    background:linear-gradient(to right, #141E30, #243B55);
+
+}
 
 section1 {
     grid-area: sc1;
@@ -46,12 +55,31 @@ section1 {
     background-color: white;
     height: auto;
     width: 100%;
+    margin-bottom: 5vh;
 }
+section1 p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 section1 div{
     padding-top: 0%;
     margin: 0%;
-    
-
+}
+#wrapper p{
+font-family: "Outfit";
+}
+#wrapper ul{
+font-family: "Outfit";
+}
+#wrapper h1{
+    font-family: "Outfit";
+}
+#wrapper h2{
+    font-family: "Outfit";
+}
+#wrapper h3{
+    font-family: "Outfit";
 }
 section2 {
     grid-area: sc2;
@@ -59,7 +87,16 @@ section2 {
     flex-wrap: wrap;
     background-color: white;
     height: auto;
-    width: 100%;
+    width: auto;
+    margin-bottom: 10vh;
+}
+section2 p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+section2 h2{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 section3 {
     grid-area: sc3;
@@ -67,7 +104,16 @@ section3 {
     flex-wrap: wrap;
     background-color: white;
     height: auto;
-    width: 100%;
+    width: auto;
+    margin-bottom: 10vh;
+}
+section3 h2{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+section3 p{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 section4 {
     grid-area: sc4;
@@ -75,7 +121,16 @@ section4 {
     flex-wrap: wrap;
     background-color: white;
     height: auto;
-    width: 100%;
+    width: auto;
+    margin-bottom: 10%;
+}
+section4 p{
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+section4 h2{
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 footer{
     grid-area: ft;
@@ -106,7 +161,7 @@ footer{
 }
 .mail{
     width: fit-content;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 5px solid #ccc;
     margin: 20px 0px;
 }
 ul li{
@@ -194,8 +249,8 @@ ul {
 .menu-button i.material-icons{
     font-size: 2.5rem;
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 8px;
+    top: 8px;
 }
 
 .show{
@@ -239,10 +294,10 @@ a {
 .knapp p{
     text-decoration: none;
     justify-content: start;
-    color: black;
+    color: #fff;
 }
-.knapp :hover{
-    transform: scale(1.05);
-    transition: all 0.5s ease;
+section1 div a :hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
