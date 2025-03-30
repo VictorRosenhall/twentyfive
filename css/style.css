@@ -18,14 +18,13 @@ nav {
     height: 10vh;
     grid-area: nv;
     display: flex;
-    /*flex-wrap: wrap;*/
     background-color: #fff;
     top: 0px;
     position: sticky;
     justify-content: center;
     align-items: center;
     /*z-index: 2;*/
-    border-bottom: 1px solid #141E30; /*linear-gradient(to right, #141E30, #243B55);*/
+    border-bottom: 1px solid #141E30;
 }
 nav div p{
     color: #ffffff;
