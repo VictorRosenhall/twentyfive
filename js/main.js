@@ -1,7 +1,7 @@
 //storlek (mobil)
-@media (max-width: 500px) {
+/*@media (max-width: 500px) {
 
-}
+}*/
 //Meny
 let layer = document.querySelector(".fade-layer")
 layer.addEventListener("click", showMenu)
