@@ -4,6 +4,7 @@
     height: auto;
     grid-template-columns:  25% 25% 25% 25%;
     grid-template-rows: auto auto auto auto auto;
+    font-family: "Outfit";
     grid-template-areas:
     'nv nv nv nv'
     'sw sw sw sw'
@@ -14,6 +15,26 @@
     'ft ft ft ft';
     }
 
+a {
+     text-decoration: none; /* Tar bort understrykning på alla länkar */
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body ul div{
+    margin: 100px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none; /* Tar bort punkterna från listan */
+    padding-left: 0; /* Tar bort eventuell padding till vänster */
+}
+    
 nav {
     height: 10vh;
     grid-area: nv;
@@ -40,10 +61,27 @@ nav div p{
     width: 40px;
     justify-content: center;
 }
+
+/*swiper*/
 swiper{
     height: 70vh;
     width: 98.72vw;
+}
 
+.swiper-container {
+    width: 100%;
+    height: 70vh;
+    overflow: hidden; /* Förhindrar att innehållet går utanför */
+    position: relative;
+    z-index: -1000;
+}
+
+/* Om man vill justera bilderna inom Swiper */
+.swiper-slide img {
+    width: 100%; /* Gör att bilderna sträcker sig över hela bredden */
+    height: auto;
+    z-index: -1000;
+    object-fit: cover;
 }
 
 section1 {
@@ -64,13 +102,23 @@ section1 div{
     padding-top: 0%;
     margin: 0%;
 }
-#wrapper {
-font-family: "Outfit";
+section1 div a :hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
+
+section1 div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 section2 {
     grid-area: sc2;
     display: flex;
-    /*flex-wrap: wrap;*/
     background-color: white;
     height: auto;
     width: auto;
@@ -118,6 +166,7 @@ section4 {
     width: auto;
     margin-bottom: 10%;
 }
+/*Section 4 finns inte just nu */
 section4 p{
     margin-left: 1vw;
     margin-right: 1vw;
@@ -126,6 +175,7 @@ section4 h2{
     margin-left: 1vw;
     margin-right: 1vw;
 }
+/*footer*/
 footer{
     grid-area: ft;
     background:linear-gradient(to right, #141E30, #243B55);
@@ -194,32 +244,7 @@ form input{
     width: 40px;
 }
 
-
-section1 div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-
-}
-
-body ul div{
-    margin: 100px;
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none; /* Tar bort punkterna från listan */
-    padding-left: 0; /* Tar bort eventuell padding till vänster */
-}
-
+/*meny*/
 .menu{
     height: 100vh;
     width: 60vw;
@@ -268,18 +293,13 @@ ul {
     display: block;
 }
 
-
-a {
-    text-decoration: none; /* Tar bort understrykning på alla länkar */
-}
-
 .list-meny{
     font-size: 50px;
     color: black;
     margin: 25px;
 
 }
-
+/*Navigation knappar i section1 */
 .knapp {
     height: 10vh;
     width: 25vw;
@@ -292,27 +312,7 @@ a {
     justify-content: start;
     color: #fff;
 }
-section1 div a :hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
 
 
 
-/*swiper*/
 
-.swiper-container {
-    width: 100%;
-    height: 70vh; /* Justera höjden beroende på behov */
-    overflow: hidden; /* Förhindrar att innehållet går utanför */
-    position: relative;
-    z-index: -1000;
-}
-
-/* Om du vill justera bilderna inom Swiper */
-.swiper-slide img {
-    width: 100%; /* Gör att bilderna sträcker sig över hela bredden */
-    height: auto;
-    z-index: -1000;
-    object-fit: cover;
-}

@@ -1,7 +1,3 @@
-//storlek (mobil)
-/*@media (max-width: 500px) {
-
-}*/
 //Meny
 let layer = document.querySelector(".fade-layer")
 layer.addEventListener("click", showMenu)
@@ -23,20 +19,12 @@ function showMenu() {
     }
 }
 
-/*function showMenu(){
-    let menu = document.querySelector("nav.menu")
-    menu.classList.toggle("show")
-
-    let layer = document.querySelector(".fade-layer")
-    layer.classList.toggle("visible")
-}*/
-
 // Initiera Swiper
 var swiper = new Swiper('.swiper-container', {
-    loop: true, // Loopar bilderna så att vi kan bläddra åt båda hållen
+    loop: true, // Loopar bilderna
     slidesPerView: 1, // Visar en bild åt gången
     autoplay: {
-        delay: 5000, // Byt bild
+        delay: 5000, // Byter bild efter 5000ms
         disableOnInteraction: false, // Låter autoplay fortsätta även om användaren interagerar
     },
     pagination: {
