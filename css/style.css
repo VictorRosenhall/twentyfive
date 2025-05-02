@@ -11,7 +11,7 @@
     'sc1 sc1 sc1 sc1'
     'sc2 sc2 sc2 sc2'
     'sc3 sc3 sc3 sc3'
-    'sc4 sc4 sc4 sc4'
+    'wm wm wm wm'
     'ft ft ft ft';
     }
 
@@ -60,6 +60,14 @@ nav div p{
     height: 40px;
     width: 40px;
     justify-content: center;
+}
+
+.watermark{
+    grid-area: wm;
+    display: flex;
+    justify-content: center;
+    margin: 0px 45vw 10vh 45vw;
+    border-bottom: 1px dotted #141E30;
 }
 
 /*swiper*/
@@ -319,6 +327,7 @@ form input{
     'nv nv nv nv'
     'su su su su'
     'su2 su2 su2 su2'
+    'wm wm wm wm'
     'ft ft ft ft';
 }
 
@@ -334,7 +343,7 @@ form input{
 #sustainability_text_1{
     height: auto;
     width: 50vw;
-    margin: 10vh 100px 10px 75px;
+    margin: 15vh 100px 10px 75px;
     padding-bottom: 1px;
     color: #fff;
 }
@@ -383,7 +392,9 @@ span.material-symbols-outlined{
     grid-template-areas:
     'nv nv nv nv'
     'ba ba ba ba'
+    'is is is is'
     'in in in in'
+    'wm wm wm wm'
     'ft ft ft ft';
     }
 
@@ -404,6 +415,16 @@ span.material-symbols-outlined{
     banner p{
         margin: 100px 0px 0px 0px;
     }
+
+    .index4_summary{
+        grid-area: is;
+        margin: 6vh 4vw 2vh 4vw;
+        padding-bottom: 6vh;
+        border-bottom: 1px solid #141E30;
+    }       
+
+
+
     #Img_FAQ img{
         width: 60vw;
         height: 50vh;
@@ -414,8 +435,8 @@ span.material-symbols-outlined{
     #ind4{
         grid-area: in;
         display: flex;
-        margin: 0px 0px 10vh 0px;
-        padding: 7vh 0px 10vh 0px;
+        margin: 0px 0px 5vh 0px;
+        padding: 7vh 0px 5vh 0px;
     }
 
     #ind4text{
@@ -426,13 +447,13 @@ span.material-symbols-outlined{
     }
 
     #contact{
+        display: flex;
+        justify-content: start;
         background-color: #141E30;
         border-radius: 25px;
         padding: 35px;
-        margin: 25px;
+        margin: 4vh 25px 4vh 25px;
         height: 38.5vh;
-    }
-    #contact p{
         color: #fff;
     }
 
@@ -483,5 +504,6 @@ span.material-symbols-outlined{
     grid-template-areas:
     'nv nv nv nv'
     'sw sw sw sw'
+    'wm wm wm wm'
     'ft ft ft ft';
     }
