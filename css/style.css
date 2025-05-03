@@ -72,13 +72,13 @@ nav div p{
 
 /*swiper*/
 swiper{
-    height: 70vh;
+    height: 60vh;
     width: 98.72vw;
 }
 
 .swiper-container {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden; /* Förhindrar att innehållet går utanför */
     position: relative;
     z-index: -1000;
@@ -111,8 +111,9 @@ section1 div{
     margin: 0%;
 }
 section1 div a :hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+    transform: scale(1.05);
+    transition: all 0.1s ease;
+    filter: brightness(0.8);
 }
 
 section1 div{
@@ -448,13 +449,27 @@ span.material-symbols-outlined{
 
     #contact{
         display: flex;
-        justify-content: start;
-        background-color: #141E30;
+        justify-content: flex-end;
+        align-items: center;
+        background:linear-gradient(to right, #141E30, #243B55);
         border-radius: 25px;
         padding: 35px;
         margin: 4vh 25px 4vh 25px;
         height: 38.5vh;
         color: #fff;
+    }
+    #contact li{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 3vh 0px 3vh 0px;
+    }
+    #contact img{
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 100%;
+        margin: 1rem;
     }
 
     #knappar_FAQ{
@@ -465,32 +480,32 @@ span.material-symbols-outlined{
         margin-bottom: 25px;
     }
 
-  details {
+  #knappar_FAQ details {
     /*border: 1px solid #ddd;*/
     border-radius: 15px;
     padding: 15px;
     margin: 5px 15px 10px 0px;
-    background-color: #141E30;
+    background:linear-gradient(to right, #141E30, #243B55);
     width: 45vw;
     height: auto;
   }
-  details summary {
+  #knappar_FAQ details summary {
     color: #fff;
   }
-  details p{
+  #knappar_FAQ details p{
     color: #fff;
   }
 
-  summary {
+  #knappar_FAQ summary {
     font-weight: bold;
     cursor: pointer;
   }
 
-  summary::marker {
+  #knappar_FAQ summary::marker {
     content: "➕ ";
   }
 
-  details[open] summary::marker {
+  #knappar_FAQ details[open] summary::marker {
     content: "➖ ";
   }
 
@@ -504,6 +519,80 @@ span.material-symbols-outlined{
     grid-template-areas:
     'nv nv nv nv'
     'sw sw sw sw'
+    'tt tt tt tt'
+    'mn mn mn mn'
     'wm wm wm wm'
     'ft ft ft ft';
     }
+    #top_text{
+        grid-area: tt;
+        margin: 10vh 5vw 0px 5vw;
+        border-bottom: 1px solid #141E30;
+
+    }
+    .main_products{
+        grid-area: mn;
+        height: auto;
+        margin: 10vh 10px 10vh 10px;
+    }
+    .main_products details{
+        height: auto;
+        width: 95vw;
+        display: block;
+        justify-content: start;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 5px 15px 10px 0px;
+        background:linear-gradient(to right, #141E30, #243B55);
+    }
+    .main_products details summary {
+        color: #fff;
+    }
+    .main_products details p{
+        color: #fff;
+    }
+
+    .main_products summary {
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+    }
+        
+        .main_products summary img{
+            height: 40vh;
+            width: 50vw;
+            object-fit: cover;
+            margin: 0px;
+            border-radius: 15px;
+        }
+
+        .main_products span{
+            margin-top: 1vh;
+        }
+        .main_products article{
+            display: flex;
+            border-top: 1px solid #fff;
+            margin-top: 25px;
+            color: #fff;
+        }
+        #contact_products{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 35px;
+            margin: 5px;
+            height: auto;
+            width: auto;
+            color: #fff;
+            border-left: 1px solid #fff;
+        }
+        #contact_products li{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 5px;
+        }
+        .main_products article div{
+            margin-right: 10vw;
+
+        }
