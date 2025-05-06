@@ -206,6 +206,8 @@ footer{
     width: fit-content;
     margin-bottom: 30px;
     position: relative;
+    margin-left: 0px;
+    margin-right: auto;
 }
 .mail{
     width: fit-content;
@@ -403,7 +405,8 @@ span.material-symbols-outlined{
         grid-area: ba;
         display: flex;
         height: 50vh;
-        width: 98.72vw;
+        width: 100%;
+        max-width: 100%;
         margin: 0px;
         padding: 0px;
         background:linear-gradient(to right, #141E30, #243B55);
@@ -465,8 +468,8 @@ span.material-symbols-outlined{
         margin: 3vh 0px 3vh 0px;
     }
     #contact img{
-        width: 15rem;
-        height: 15rem;
+        width: 14rem;
+        height: 14rem;
         object-fit: cover;
         border-radius: 100%;
         margin: 1rem;
@@ -474,7 +477,7 @@ span.material-symbols-outlined{
 
     #knappar_FAQ{
         height: auto;
-        width: 500px;
+        width: auto;
     }
     #knappar_FAQ h2{
         margin-bottom: 25px;
@@ -596,3 +599,194 @@ span.material-symbols-outlined{
             margin-right: 10vw;
 
         }
+
+/* Mobil (media-queries) */
+@media (max-width: 500px) {
+
+    /* Allmänt */
+    /* Swiper */
+    swiper{
+        height: 80vh;
+    }
+    .swiper-container{
+        height: 80vh;
+    }
+    .swiper-slide{
+        height: 80vh;
+    }
+    .swiper-slide img{
+        height: 80vh;
+    }
+
+    /* Menu */
+    .menu{
+        width: 75vw;
+    }
+    .list-meny{
+        font-size: 25px;
+    }
+
+    /* Footer */
+    .rad {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kolumn {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .kolumn h3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .rad {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centrera innehåll i kolumnerna */
+    }
+  
+    .kolumn {
+        flex-basis: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center; /* Centrera input*/
+        width: 100%;
+    }
+  
+    form input {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+  
+    .mail{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    /* Hem-hemsida */
+    .knapp{
+        width: 70vw;
+        height: 10vh;
+    }
+
+    /* Products */
+    #main_products{
+        flex-direction: column;
+        width: 300px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #main_products details{
+        width: 200px;
+        height: auto;
+
+    }
+
+
+    /* Sustainability */
+    #sustainability{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    #sustainability_text_2{
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
+    #sustainability_text_2_1{
+        width: 90vw;
+        margin-left: 0px;
+    }
+    #sustainability_text_1{
+        margin: 10px;
+        padding: 0px;
+    }
+    #saxmo{
+        width: 40vw;
+    }
+
+
+    /* FAQ */
+    banner{
+        justify-content: flex-end;
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+    }
+    banner h1{
+        margin: 10vh 5vw 20px 5vw;
+        padding: 0px;
+        font-size: 16px;
+        width: 100px;
+    }
+    #Img_FAQ img{
+        border-radius: 0px 0px 0px 0px;
+        object-fit: cover;
+    }
+
+    #ind4{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+    }
+    #ind4text{
+        padding: 0px;
+        width: 85%;
+        text-align: center;
+    }
+    #contact{
+        padding: 10px;
+        width: 80vw;
+        margin-left: 7vw;
+        margin-right: auto;
+    }
+    #contact img{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+    }
+    #contact h4{
+        font-size: 10px;
+    }
+    #contact li{
+        margin: 5px 10px 0px 10px;
+    }
+    #contact span{
+        font-size: 14px;
+    }
+    #knappar_FAQ{
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #knappar_FAQ details{
+        width: 80vw;
+        margin: 10px auto;
+    }
+    #knappar_FAQ h2{
+        text-align: center;
+    }
+}
