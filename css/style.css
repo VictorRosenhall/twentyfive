@@ -527,7 +527,11 @@ span.material-symbols-outlined{
   }
 
   #knappar_FAQ details[open] summary::marker {
-    content: "➖ ";
+    content: "➖";
+  }
+
+  summary::marker {
+    content: "➖";
   }
 
   /* Products*/
@@ -615,8 +619,15 @@ span.material-symbols-outlined{
         }
         .main_products article div{
             margin-right: 10vw;
-
         }
+        summary::marker {
+            content: "➕ ";
+          }
+          
+        details[open] summary::marker {
+            content: "➖ ";
+          }
+          
 
 /* Mobil (media-queries) */
 @media (max-width: 500px) {
