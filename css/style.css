@@ -52,9 +52,13 @@ nav div p{
 }
 
 .logga{
-    width: auto;
-    height: auto;
     position: fixed;
+    top: 10px; /* avstånd från toppen */
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    width: auto;
+    z-index: 50;
 }
 .logga img{
     height: 40px;
@@ -76,7 +80,8 @@ nav div p{
 #investor_text{
     max-width: 50%;
     height: auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 10px;
+    margin-left: 4vw;
 }
 #investor_text p{
     border-bottom: 1px solid #141E30;
@@ -85,6 +90,7 @@ nav div p{
 }
 #video{
     border-radius: 10px;
+    margin-right: 4vw;
 }
 
 /*swiper*/
@@ -152,14 +158,7 @@ section2 {
     justify-content: right;
     align-items: center;
     padding: 10px;
-}
-section2 p{
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-section2 h2{
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin: 2vh 5vw 20vh 5vw;
 }
 
 section3 {
@@ -269,6 +268,42 @@ form input{
 }
 
 /*meny*/
+.nav_dator {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 2vw;
+  background-color: white;
+}
+
+.nav_dator_ul {
+  display: flex;
+  height: auto;
+  gap: 30px;
+  list-style: none;
+  margin: 6vh 4vh 4vh 4vh;
+}
+
+.nav_dator_ul a {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.nav_dator_ul li:hover{
+    transform: scale(1.05);
+    transition: all 1 ease;
+    filter: brightness(0.5);
+}
+
+.logga img {
+  height: 40px;
+  width: auto;
+}
+
+.menu-nav{
+    display: none;
+}
 .menu{
     height: 100vh;
     width: 60vw;
@@ -451,7 +486,8 @@ span.material-symbols-outlined{
         width: 60vw;
         height: 50vh;
         object-fit: cover;
-        border-radius: 0px 0px 0px 250px;
+        filter: contrast(1.5);
+        filter: brightness(1.1);
     }
 
     #ind4{
@@ -583,68 +619,75 @@ span.material-symbols-outlined{
         display: flex;
     }
         
-        .main_products summary img{
-            height: 40vh;
-            width: 50vw;
-            object-fit: cover;
-            margin: 0px;
-            border-radius: 15px;
-        }
+    .main_products summary img{
+        height: 40vh;
+        width: 50vw;
+        object-fit: cover;
+        margin: 0px;
+        border-radius: 15px;
+    }
+    .main_products span{
+        margin-top: 1vh;
+    }
+    .main_products article{
+        display: flex;
+        border-top: 1px solid #fff;
+        margin-top: 25px;
+        color: #fff;
+    }
+    #contact_products{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 35px;
+        margin: 5px;
+        height: auto;
+        width: auto;
+        color: #fff;
+        border-left: 1px solid #fff;
+    }
+    #contact_products li{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 5px;
+    }
+    .main_products article div{
+        margin-right: 10vw;
+    }
+    #klick{
+        border-bottom: 1px solid #fff;
+        width: 22vw;
+        padding-bottom: 10px;
+    }
 
-        .main_products span{
-            margin-top: 1vh;
-        }
-        .main_products article{
-            display: flex;
-            border-top: 1px solid #fff;
-            margin-top: 25px;
-            color: #fff;
-        }
-        #contact_products{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 35px;
-            margin: 5px;
-            height: auto;
-            width: auto;
-            color: #fff;
-            border-left: 1px solid #fff;
-        }
-        #contact_products li{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            margin: 5px;
-        }
-        .main_products article div{
-            margin-right: 10vw;
-        }
-        summary::marker {
-            content: "➕ ";
-          }
-          
-        details[open] summary::marker {
-            content: "➖ ";
-          }
-          
-
+    #current{
+        border-bottom: 1px dotted #141E30;
+        margin-bottom: 3px;
+    }
 /* Mobil (media-queries) */
 @media (max-width: 500px) {
 
     /* Allmänt */
+    .nav_dator{
+        display: none;
+    }
+    .menu-nav{
+        display: block;
+    }
+    
     /* Swiper */
     swiper{
-        height: 80vh;
+        height: 65vh;
     }
     .swiper-container{
-        height: 80vh;
+        height: 65vh;
     }
     .swiper-slide{
-        height: 80vh;
+        height: 65vh;
     }
     .swiper-slide img{
-        height: 80vh;
+        height: 65vh;
     }
 
     /* Menu */
@@ -715,7 +758,7 @@ span.material-symbols-outlined{
     /* Hem-hemsida */
     .knapp{
         width: 70vw;
-        height: 10vh;
+        height: 7vh;
     }
     .investor{
         display: flex;
@@ -728,6 +771,7 @@ span.material-symbols-outlined{
         height: auto;
         padding: 10px 10px 10px 10px;
         text-align: center;
+        margin: 0px;
     }
     #investor_text p{
         border-bottom: 1px solid #141E30;
@@ -739,21 +783,65 @@ span.material-symbols-outlined{
     }
     #video{
         border-radius: 10px;
-        width: 80%;
-        height: auto;
+        width: 85%;
+        height: 25vh;
+        margin-left: 20px;
+    }
+    #video iframe{
+        height: 25vh;
     }
 
     /* Products */
-    #main_products{
-        flex-direction: column;
-        width: 300px;
-        margin: 0px;
-        padding: 0px;
+    * {
+        box-sizing: border-box;
     }
-    #main_products details{
-        width: 200px;
+    #wrapper_products {
+        grid-template-columns: 1fr;
+        overflow-x: hidden;
+    }
+    .main_products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main_products summary{
         height: auto;
-
+        width: 90vw;
+        flex-direction: column;
+    }
+    .main_products summary img{
+        width: 83vw;
+        min-height: 10vh;
+    }
+    .main_products details{
+        margin: 5vh auto;
+        width: 90vw;
+    }
+    .main_products span{
+        width: 80vw;
+    }
+    .main_products img{
+       width: auto; 
+       height: auto;
+    }
+    nav.menu-nav {
+        background-color: white;
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+        height: 8%;
+      }
+    #contact_products{
+        flex-direction: column;
+        font-style: 8px;
+        width: 20px;
+        display: none;
+    }
+    #klick{
+        width: 70vw;
     }
 
 
@@ -783,20 +871,19 @@ span.material-symbols-outlined{
 
     /* FAQ */
     banner{
-        justify-content: flex-end;
         margin: 0px;
         padding: 0px;
         max-width: 100%;
     }
     banner h1{
-        margin: 10vh 5vw 20px 5vw;
+        margin: 10vh 10vw 10vh 10vw;
         padding: 0px;
-        font-size: 16px;
+        font-size: 48px;
         width: 100px;
     }
+
     #Img_FAQ img{
-        border-radius: 0px 0px 0px 0px;
-        object-fit: cover;
+        display: none;
     }
 
     #ind4{
@@ -812,9 +899,10 @@ span.material-symbols-outlined{
         text-align: center;
     }
     #contact{
+        flex-direction: column-reverse;
         padding: 10px;
         width: 80vw;
-        margin-left: 7vw;
+        margin-left: 10vw;
         margin-right: auto;
     }
     #contact img{
@@ -823,10 +911,10 @@ span.material-symbols-outlined{
         margin: 0px;
     }
     #contact h4{
-        font-size: 10px;
+        font-size: 12px;
     }
     #contact li{
-        margin: 5px 10px 0px 10px;
+        margin: 0px 0px 0px     0px;
     }
     #contact span{
         font-size: 14px;

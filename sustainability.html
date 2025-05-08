@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebni</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+<body>
+
+  <div id="wrapper_sustainability">
+    <nav class="menu-nav">  <!-- Lägg till en klass på nav-elementet för stt vill selektera det lättare -->
+        <div class="fade-layer"></div> <!-- Fade layer som du togglar i din JS -->
+        <div class="menu-button">
+            <i class="material-icons">menu</i>  <!-- Menyknappen som kommer att trigga menyn -->
+        </div>
+        <div class="logga">
+          <a href="index.html"><img src="img/Kebni-logga.jpg" alt="Kebni logga"></a>
+        </div>
+        <div class="menu">  <!-- Meny med klassen 'menu' -->
+            <ul>
+                <li><a class="list-meny" href="index.html">Home</a></li>
+                <li><a class="list-meny" href="products.html">Products</a></li>
+                <li><a class="list-meny" href="sustainability.html">Sustainability</a></li>
+                <li><a class="list-meny" href="FAQ.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="nav_dator">
+      <div class="logga">
+        <a href="index.html"><img src="img/Kebni-logga.jpg" alt="Kebni logga"></a>
+      </div>
+      <ul class="nav_dator_ul">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="sustainability.html" id="current">Sustainability</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <section class="sustainability">  
+      <div id="sustainability_text_1">
+        <h2>Sustainability</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequuntur numquam earum delectus illo, quaerat repudiandae et quasi aliquid ducimus ab ipsam illum, sed consequatur labore sit aut rerum sunt. - Torbjörn Samxo, VD        </p>
+      </div>
+        <img id="saxmo" src="img/saxmo.jpg" alt="Kebni VD"></img>
+    </section>
+
+    <div id="sustainability_text_2">  
+      <div>
+        <ul>
+          <li>
+            <span class="material-symbols-outlined">nature</span>
+            <h3> - 5 000 000 planterade träd</h3>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">potted_plant</span>
+            <h3> - 5 000 000 planterade träd</h3>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">energy_program_saving</span>
+            <h3> - 5 000 000 planterade träd</h3>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">raven</span>
+            <h3> - 5 000 000 planterade träd</h3>
+          </li>
+        </ul>
+      </div>
+
+      <div id="sustainability_text_2_1">
+        <h2>
+          Kebnis arbete med miljön
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolor minima illo! Error cumque tempora nesciunt iure non quos labore nulla, obcaecati illum odio earum. Omnis quibusdam eveniet similique vero. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis harum reprehenderit nostrum atque cum totam incidunt sequi laborum temporibus labore deserunt odio beatae rem, nemo saepe sunt, provident cumque consectetur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi autem delectus vero adipisci exercitationem alias, fuga assumenda dolores nulla perspiciatis vel, reiciendis animi similique ratione error voluptates quis quia.
+        </p> 
+      </div>
+    </div>
+
+    <div class="watermark">
+      <p>Kebni 2025©</p>
+    </div>
+
+      <footer>
+          <div class="rad">
+              <div class="kolumn">
+              <img class="logga-footer" src="img/Kebni-logga-text.png" alt="Kebni logga">
+              <p>Vågögatan 6164 40 </p>
+              <p>Kista, Sweden</p>
+              </div>
+              <div class="kolumn">
+                <h3>Contact</h3>
+                <p>You are welcome to contact our support via email or phone</p>
+                <p class="mail">support@kebni.com</p>
+                <h4>0736720812</h4>
+              </div>
+              <div class="kolumn">
+                <h3>Länkar</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="sustainability.html">Sustainability</a></li>
+                  <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+              </div>
+              <div class="kolumn">
+                <h3>Nyhetsbrev</h3>
+                <form>
+                  <input type="email" placeholder="Skriv in din email" required>
+                </form>
+              </div>
+
+          </div>
+      </footer>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
