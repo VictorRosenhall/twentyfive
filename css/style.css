@@ -275,6 +275,7 @@ form input{
   align-items: center;
   padding: 5px 2vw;
   background-color: white;
+  z-index: 100000;
 }
 
 .nav_dator_ul {
@@ -481,13 +482,16 @@ span.material-symbols-outlined{
     }       
 
 
-
+    #img_FAQ{
+        z-index: 1;
+    }
     #Img_FAQ img{
         width: 60vw;
         height: 50vh;
         object-fit: cover;
         filter: contrast(1.5);
         filter: brightness(1.1);
+        /*filter: drop-shadow(5px 1px 5px #000);*/
     }
 
     #ind4{
