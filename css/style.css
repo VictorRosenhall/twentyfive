@@ -110,7 +110,7 @@ swiper{
 /* Om man vill justera bilderna inom Swiper */
 .swiper-slide img {
     width: 100%; /* Gör att bilderna sträcker sig över hela bredden */
-    height: auto;
+    height: 60vh;
     z-index: -1000;
     object-fit: cover;
 }
@@ -853,23 +853,26 @@ span.material-symbols-outlined{
     #sustainability{
         margin: 0px;
         padding: 0px;
-
     }
     #sustainability_text_2{
         flex-direction: column;
-        margin: 10px;
+        margin: 50px 10px 10px 10px;
         padding: 10px;
     }
     #sustainability_text_2_1{
+        text-align: center;
         width: 90vw;
         margin-left: 0px;
+        margin-top: 50px;
+        padding-bottom: 30px;
     }
     #sustainability_text_1{
-        margin: 10px;
+        margin: 60px auto auto 20px;
         padding: 0px;
     }
     #saxmo{
-        width: 40vw;
+        width: 50vw;
+        height: 50vh;
     }
 
 
